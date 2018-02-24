@@ -31794,6 +31794,7 @@ cr.getObjectRefTable = function () {
 		cr.system_object.prototype.exps.rgb,
 		cr.plugins_.Text.prototype.acts.SetInstanceVar,
 		cr.system_object.prototype.acts.Wait,
+		cr.system_object.prototype.acts.RestartLayout,
 		cr.plugins_.GAMEEConnector.prototype.acts.GameOver,
 		cr.plugins_.Text.prototype.acts.SetY,
 		cr.plugins_.Text.prototype.exps.Y,
@@ -31813,6 +31814,7 @@ cr.getObjectRefTable = function () {
 		cr.system_object.prototype.acts.SetVar,
 		cr.system_object.prototype.cnds.OnLayoutStart,
 		cr.plugins_.GAMEEConnector.prototype.cnds.onInterruption,
+		cr.plugins_.Sprite.prototype.acts.SetBoolInstanceVar,
 		cr.plugins_.GAMEEConnector.prototype.cnds.boolean
 	];
 };
