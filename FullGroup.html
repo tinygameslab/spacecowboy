@@ -1,0 +1,2618 @@
+
+<html>
+
+<head>
+<title>Palpiteiro</title>
+    <link rel="shortcut icon"
+ href="trophy.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous"> </head>
+
+    <style>
+  #toggle {
+
+  }
+  </style>
+    
+<body>
+  <nav class="navbar navbar-expand-md bg-primary navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-trophy"></i>&nbsp;Palpiteiro</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.php">
+              <i class="fas fa-home"></i>&nbsp;Inicio</a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link" href="groups.php">
+              <i class="fas fa-users"></i>&nbsp;Grupos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="stats.php">
+              <i class="fas fa-chart-pie"></i>&nbsp;Estatisticas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="teste.php">
+              <i class="fas fa-user-circle"></i>&nbsp;Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../admin/logout.php?path=referrer">
+              <i class="fas fa-sign-out-alt"></i>&nbsp;Sair</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="">
+            <i class="fas fa-users"></i>&nbsp;pedrao</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a href="" class="active nav-link" data-toggle="tab" data-target="#tabone">Resumo</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link" data-toggle="tab" data-target="#tabtwo">Meu jogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" data-toggle="tab" data-target="#tabthree">Regras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" data-toggle="tab" data-target="#tabfour">Configurações</a>
+            </li>          </ul>
+          <div class="tab-content mt-2">
+              
+              <!-- Primeiro painel!!!! - Resumo -->
+            <div class="tab-pane fade show active" id="tabone" role="tabpanel">
+              <p class="">Informações como: Numero de usuarios, lista de usuarios, grafico de ganhadores</p>
+             <h3 class="text-success"><b>pedrao</b>
+                <small> criado por billy the kid</small>
+              </h3>
+              <h4 class="text-muted"><b>3</b><small> participantes</small>
+              </h4>
+                <h4 class="text-muted"><small>Convide novos participantes usando o codigo: </small><b><kbd>37693c</kbd></b>
+              </h4>
+                <h4 class="text-muted"><b>0</b><small> pontos acumulados</small>
+              </h4>
+                <p>Participantes:</p>
+                <div class="btn-group-vertical">
+                
+                    <a role="button" class="btn btn-primary d-flex justify-content-between align-items-center" href="#">
+                    Super Admin
+                    <span class="badge badge-warning badge-pill"><i class="fas fa-eye"></i></span>
+                    </a>
+                    <a role="button" class="btn btn-primary d-flex justify-content-between align-items-center" href="#">
+                    billy the kid
+                    <span class="badge badge-warning badge-pill"><i class="fas fa-eye"></i></span>
+                    </a>
+                    <a role="button" class="btn btn-primary d-flex justify-content-between align-items-center" href="#">
+                    Usuario Numero Tres
+                    <span class="badge badge-warning badge-pill"><i class="fas fa-eye"></i></span>
+                    </a>                </div>
+                <p class="py-2" ><a href="join_group.php?groupcode=37693c&exit=leave">Sair do grupo</a></p>            </div>
+              
+              <!-- Segundo Painel!!!! - Jogo -->
+            <div class="tab-pane fade" id="tabtwo" role="tabpanel">
+              <div class="row" >
+                <div class="col-md-8 py-1">
+                  <!-- % complete -->
+                  <div class="progress" style="height: 20px" >
+                    <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%"> 40% Completo </div>
+                  </div>
+                </div>
+                <div class="col-md-4 pull-right d-flex justify-content-end">
+                  <ul class="pagination">
+                    <li><h3>&nbsp;
+                      <a href="#">
+                        <i class="fas fa-save">&nbsp;</i>
+                      </a></h3></li>
+                    <li> <h3>&nbsp;
+                      <a href="#" id="downloadtoggle">
+                        <i class="fas fa-download">&nbsp;</i>
+                      </a></h3></li>
+                      <div id="toggle" style="display:none;">
+                      
+                                <div class="btn-group" >
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Carregar </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item disabled" href="#"><small>Escolha de onde baixar o jogo</small></a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+                <a class="dropdown-item" href="#">Separated link</a>
+                <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </div>
+                      
+                      </div>
+                    <li><h3>&nbsp;
+                      <a href="#">
+                        <i class="fas fa-ban">&nbsp;</i> 
+                      </a></h3></li>
+                  </ul>
+                </div>
+              </div>
+              <p class="">
+                
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+.mygamestyle .tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;width:100%;}
+.mygamestyle .tg td {font-family:Arial, sans-serif;font-size:12px;padding:4px 2px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;border-color:#ccc;color:#333;background-color:#fff;text-align:center}
+.mygamestyle .tg th {font-family:Arial, sans-serif;font-size:12px;font-weight:normal;padding:4px 2px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;border-color:#ccc;color:#333;background-color:#f0f0f0;text-align:center}
+.mygamestyle .tg .tg-yw4l{vertical-align:top}
+.mygamestyle .tg .tg-l711{border-color:inherit}
+.mygamestyle .tg .tg-us36{border-color:inherit;vertical-align:top}
+    
+.mygamestyle input[type="number"]{
+    width: 32px;
+        height: 100%;
+        box-sizing: border-box;
+        padding:0px 0px;
+        border-width:0px;
+        text-align: center;
+}
+
+
+    
+    /* Style the buttons that are used to open and close the accordion panel */
+.mygamestyle .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 6px 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    line-height: 28px;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.mygamestyle .active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.mygamestyle .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: left;
+    margin-right: 5px;
+}
+
+.mygamestyle .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+    
+.mygamestyle .accordion img {
+	border-radius: 20%;
+	display: inline;
+	margin-right: 5px;
+	margin-left: auto;
+	float: right;
+    padding: 2px;
+    border: 2px solid #ffffff;
+    background-color: #000000;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.mygamestyle .panel {
+    padding: 0px 0px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    width: 100%;
+}
+
+/* Dropdown Button */
+.mygamestyle .dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.mygamestyle .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.mygamestyle .dropdown {
+    position: relative;
+    /* display: inline-block; -Makes it extend 100% */
+    font-family:Arial, sans-serif;
+    font-size:12px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.mygamestyle .dropdown-content {
+    display: none;
+    /* position: absolute; */
+    padding: 2px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.mygamestyle .dropdown-content a {
+    color: black;
+    padding: 2px 16px;
+    text-decoration: none;
+   /* display: block; */
+}
+
+/* Change color of dropdown links on hover */
+.mygamestyle .dropdown-content a:hover {background-color: #ddd}
+.mygamestyle .knockout-tie-content {
+	display: none;
+}
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.mygamestyle .show {display:block;}
+.mygamestyle .showtie {display:table-row;}
+</style>
+    
+</head>
+<body>
+<div class="mygamestyle">
+<button class="accordion">Group A<span id="GA2img"><img src='Flags/2nd.png' width=35px height=21px></span><span id="GA1img"><img src='Flags/1st.png' width=35px height=21px></span></button>
+<div class="panel">
+
+<!-- Group A -->
+<!-- Group Summary -->
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l">Pos</th>
+    <th class="tg-yw4l">Flag</th>
+    <th class="tg-yw4l">Team</th>
+    <th class="tg-yw4l">Pts</th>
+    <th class="tg-yw4l">Pld</th>
+    <th class="tg-yw4l">W</th>
+    <th class="tg-yw4l">D</th>
+    <th class="tg-yw4l">L</th>
+    <th class="tg-yw4l">GF</th>
+    <th class="tg-yw4l">GA</th>
+    <th class="tg-yw4l">GD</th>
+    <th class="tg-yw4l">Qual</th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">1</td>
+    <td class="tg-yw4l"><span id="GAFlag0"><img src='Flags/Russia.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GATeam0">Russia</span></td>
+    <td class="tg-yw4l"><span id="GAPts0"></span></td>
+    <td class="tg-yw4l"><span id="GAPld0"></span></td>
+    <td class="tg-yw4l"><span id="GAW0"></span></td>
+    <td class="tg-yw4l"><span id="GAD0"></span></td>
+    <td class="tg-yw4l"><span id="GAL0"></span></td>
+    <td class="tg-yw4l"><span id="GAGF0"></span></td>
+    <td class="tg-yw4l"><span id="GAGA0"></span></td>
+    <td class="tg-yw4l"><span id="GAGD0"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">2</td>
+    <td class="tg-yw4l"><span id="GAFlag1"><img src='Flags/Saudi Arabia.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GATeam1">Saudi Arabia</span></td>
+    <td class="tg-yw4l"><span id="GAPts1"></span></td>
+    <td class="tg-yw4l"><span id="GAPld1"></span></td>
+    <td class="tg-yw4l"><span id="GAW1"></span></td>
+    <td class="tg-yw4l"><span id="GAD1"></span></td>
+    <td class="tg-yw4l"><span id="GAL1"></span></td>
+    <td class="tg-yw4l"><span id="GAGF1"></span></td>
+    <td class="tg-yw4l"><span id="GAGA1"></span></td>
+    <td class="tg-yw4l"><span id="GAGD1"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">3</td>
+    <td class="tg-yw4l"><span id="GAFlag2"><img src='Flags/Uruguay.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GATeam2">Uruguay</span></td>
+    <td class="tg-yw4l"><span id="GAPts2"></span></td>
+    <td class="tg-yw4l"><span id="GAPld2"></span></td>
+    <td class="tg-yw4l"><span id="GAW2"></span></td>
+    <td class="tg-yw4l"><span id="GAD2"></span></td>
+    <td class="tg-yw4l"><span id="GAL2"></span></td>
+    <td class="tg-yw4l"><span id="GAGF2"></span></td>
+    <td class="tg-yw4l"><span id="GAGA2"></span></td>
+    <td class="tg-yw4l"><span id="GAGD2"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">4</td>
+    <td class="tg-yw4l"><span id="GAFlag3"><img src='Flags/Egypt.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GATeam3">Egypt</span></td>
+    <td class="tg-yw4l"><span id="GAPts3"></span></td>
+    <td class="tg-yw4l"><span id="GAPld3"></span></td>
+    <td class="tg-yw4l"><span id="GAW3"></span></td>
+    <td class="tg-yw4l"><span id="GAD3"></span></td>
+    <td class="tg-yw4l"><span id="GAL3"></span></td>
+    <td class="tg-yw4l"><span id="GAGF3"></span></td>
+    <td class="tg-yw4l"><span id="GAGA3"></span></td>
+    <td class="tg-yw4l"><span id="GAGD3"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+</table>
+<!-- Menu for tied results -->
+<div class="dropdown">
+  <!--  <button onclick="myFunction()" class="dropbtn">Dropdown</button> -->
+  <div id="GATieFirst" class="dropdown-content">
+      <span id="GATieFirstText">Test</span>
+  </div>
+  <div id="GATieSecong" class="dropdown-content">
+    <span id="GATieSecongText">Test</span>
+  </div>
+</div>
+<!-- Start of Group Games-->
+<table class="tg">
+  <tr>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Flag</th>
+    <th class="tg-031e">Score</th>
+    <th class="tg-031e">x</th>
+    <th class="tg-031e">Score</th>
+    <th class="tg-031e">Flag</th>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Date</th>
+    <th class="tg-yw4l">L</th>
+  </tr>
+  <tr>
+    <td class="tg-031e">Russia</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GA1H" size="0" type="number" placeholder="?" value="3" oninput="groupAcalc('GA')" onchange="groupAcalc('GA')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GA1A" size="0" type="number" placeholder="?" oninput="groupAcalc('GA')" onchange="groupAcalc('GA')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Saudi Arabia</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Egypt</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GA2H" size="0" type="number" placeholder="?" value="2" oninput="groupAcalc('GA')" onchange="groupAcalc('GA')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GA2A" size="0" type="number" placeholder="?" oninput="groupAcalc('GA')" onchange="groupAcalc('GA')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Uruguay</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Russia</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GA3H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GA')" onchange="groupAcalc('GA')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GA3A" size="0" type="number" placeholder="?" oninput="groupAcalc('GA')" onchange="groupAcalc('GA')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Egypt</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Uruguay</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GA4H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GA')" onchange="groupAcalc('GA')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GA4A" size="0" type="number" placeholder="?" oninput="groupAcalc('GA')" onchange="groupAcalc('GA')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Saudi Arabia</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Uruguay</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GA5H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GA')" onchange="groupAcalc('GA')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GA5A" size="0" type="number" placeholder="?" oninput="groupAcalc('GA')" onchange="groupAcalc('GA')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Russia</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Saudi Arabia</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GA6H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GA')" onchange="groupAcalc('GA')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GA6A" size="0" type="number" placeholder="?" oninput="groupAcalc('GA')" onchange="groupAcalc('GA')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Egypt</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+</table>
+</div>  
+
+<button class="accordion">Group B
+<span id="GB2img"><img src='Flags/2nd.png' width=35px height=21px></span>
+<span id="GB1img"><img src='Flags/1st.png' width=35px height=21px></span>
+</button>
+
+<div class="panel">
+<!-- Group B -->
+<!-- Group Summary -->
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l">Pos</th>
+    <th class="tg-yw4l">Flag</th>
+    <th class="tg-yw4l">Team</th>
+    <th class="tg-yw4l">Pts</th>
+    <th class="tg-yw4l">Pld</th>
+    <th class="tg-yw4l">W</th>
+    <th class="tg-yw4l">D</th>
+    <th class="tg-yw4l">L</th>
+    <th class="tg-yw4l">GF</th>
+    <th class="tg-yw4l">GA</th>
+    <th class="tg-yw4l">GD</th>
+    <th class="tg-yw4l">Qual</th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">1</td>
+    <td class="tg-yw4l"><span id="GBFlag0"><img src='Flags/Portugal.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GBTeam0">Portugal</span></td>
+    <td class="tg-yw4l"><span id="GBPts0"></span></td>
+    <td class="tg-yw4l"><span id="GBPld0"></span></td>
+    <td class="tg-yw4l"><span id="GBW0"></span></td>
+    <td class="tg-yw4l"><span id="GBD0"></span></td>
+    <td class="tg-yw4l"><span id="GBL0"></span></td>
+    <td class="tg-yw4l"><span id="GBGF0"></span></td>
+    <td class="tg-yw4l"><span id="GBGA0"></span></td>
+    <td class="tg-yw4l"><span id="GBGD0"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">2</td>
+    <td class="tg-yw4l"><span id="GBFlag1"><img src='Flags/Spain.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GBTeam1">Spain</span></td>
+    <td class="tg-yw4l"><span id="GBPts1"></span></td>
+    <td class="tg-yw4l"><span id="GBPld1"></span></td>
+    <td class="tg-yw4l"><span id="GBW1"></span></td>
+    <td class="tg-yw4l"><span id="GBD1"></span></td>
+    <td class="tg-yw4l"><span id="GBL1"></span></td>
+    <td class="tg-yw4l"><span id="GBGF1"></span></td>
+    <td class="tg-yw4l"><span id="GBGA1"></span></td>
+    <td class="tg-yw4l"><span id="GBGD1"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">3</td>
+    <td class="tg-yw4l"><span id="GBFlag2"><img src='Flags/Morocco.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GBTeam2">Morocco</span></td>
+    <td class="tg-yw4l"><span id="GBPts2"></span></td>
+    <td class="tg-yw4l"><span id="GBPld2"></span></td>
+    <td class="tg-yw4l"><span id="GBW2"></span></td>
+    <td class="tg-yw4l"><span id="GBD2"></span></td>
+    <td class="tg-yw4l"><span id="GBL2"></span></td>
+    <td class="tg-yw4l"><span id="GBGF2"></span></td>
+    <td class="tg-yw4l"><span id="GBGA2"></span></td>
+    <td class="tg-yw4l"><span id="GBGD2"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">4</td>
+    <td class="tg-yw4l"><span id="GBFlag3"><img src='Flags/Iran.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GBTeam3">Iran</span></td>
+    <td class="tg-yw4l"><span id="GBPts3"></span></td>
+    <td class="tg-yw4l"><span id="GBPld3"></span></td>
+    <td class="tg-yw4l"><span id="GBW3"></span></td>
+    <td class="tg-yw4l"><span id="GBD3"></span></td>
+    <td class="tg-yw4l"><span id="GBL3"></span></td>
+    <td class="tg-yw4l"><span id="GBGF3"></span></td>
+    <td class="tg-yw4l"><span id="GBGA3"></span></td>
+    <td class="tg-yw4l"><span id="GBGD3"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+</table>
+<!-- Menu for tied results -->
+<div class="dropdown">
+  <!--  <button onclick="myFunction()" class="dropbtn">Dropdown</button> -->
+  <div id="GBTieFirst" class="dropdown-content">
+      <span id="GBTieFirstText">Test</span>
+  </div>
+  <div id="GBTieSecong" class="dropdown-content">
+    <span id="GBTieSecongText">Test</span>
+  </div>
+</div>
+<!-- Start of Group Games-->
+<table class="tg">
+  <tr>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Flag</th>
+    <th class="tg-031e">Score</th>
+    <th class="tg-031e">x</th>
+    <th class="tg-031e">Score</th>
+    <th class="tg-031e">Flag</th>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Date</th>
+    <th class="tg-yw4l">L</th>
+  </tr>
+  <tr>
+    <td class="tg-031e">Morocco</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GB1H" size="0" type="number" placeholder="?" value="3" oninput="groupAcalc('GB')" onchange="groupAcalc('GB')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GB1A" size="0" type="number" placeholder="?" oninput="groupAcalc('GB')" onchange="groupAcalc('GB')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Iran</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Portugal</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GB2H" size="0" type="number" placeholder="?" value="2" oninput="groupAcalc('GB')" onchange="groupAcalc('GB')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GB2A" size="0" type="number" placeholder="?" oninput="groupAcalc('GB')" onchange="groupAcalc('GB')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Spain</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Portugal</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GB3H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GB')" onchange="groupAcalc('GB')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GB3A" size="0" type="number" placeholder="?" oninput="groupAcalc('GB')" onchange="groupAcalc('GB')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Morocco</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Iran</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GB4H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GB')" onchange="groupAcalc('GB')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GB4A" size="0" type="number" placeholder="?" oninput="groupAcalc('GB')" onchange="groupAcalc('GB')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Spain</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Iran</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GB5H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GB')" onchange="groupAcalc('GB')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GB5A" size="0" type="number" placeholder="?" oninput="groupAcalc('GB')" onchange="groupAcalc('GB')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Portugal</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Spain</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GB6H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GB')" onchange="groupAcalc('GB')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GB6A" size="0" type="number" placeholder="?" oninput="groupAcalc('GB')" onchange="groupAcalc('GB')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Morocco</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+</table>
+</div>  
+
+<button class="accordion">Group C
+<span id="GC2img"><img src='Flags/2nd.png' width=35px height=21px></span>
+<span id="GC1img"><img src='Flags/1st.png' width=35px height=21px></span>
+</button>
+
+<div class="panel">
+<!-- Group C -->
+<!-- Group Summary -->
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l">Pos</th>
+    <th class="tg-yw4l">Flag</th>
+    <th class="tg-yw4l">Team</th>
+    <th class="tg-yw4l">Pts</th>
+    <th class="tg-yw4l">Pld</th>
+    <th class="tg-yw4l">W</th>
+    <th class="tg-yw4l">D</th>
+    <th class="tg-yw4l">L</th>
+    <th class="tg-yw4l">GF</th>
+    <th class="tg-yw4l">GA</th>
+    <th class="tg-yw4l">GD</th>
+    <th class="tg-yw4l">Qual</th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">1</td>
+    <td class="tg-yw4l"><span id="GCFlag0"><img src='Flags/France.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GCTeam0">France</span></td>
+    <td class="tg-yw4l"><span id="GCPts0"></span></td>
+    <td class="tg-yw4l"><span id="GCPld0"></span></td>
+    <td class="tg-yw4l"><span id="GCW0"></span></td>
+    <td class="tg-yw4l"><span id="GCD0"></span></td>
+    <td class="tg-yw4l"><span id="GCL0"></span></td>
+    <td class="tg-yw4l"><span id="GCGF0"></span></td>
+    <td class="tg-yw4l"><span id="GCGA0"></span></td>
+    <td class="tg-yw4l"><span id="GCGD0"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">2</td>
+    <td class="tg-yw4l"><span id="GCFlag1"><img src='Flags/Australia.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GCTeam1">Australia</span></td>
+    <td class="tg-yw4l"><span id="GCPts1"></span></td>
+    <td class="tg-yw4l"><span id="GCPld1"></span></td>
+    <td class="tg-yw4l"><span id="GCW1"></span></td>
+    <td class="tg-yw4l"><span id="GCD1"></span></td>
+    <td class="tg-yw4l"><span id="GCL1"></span></td>
+    <td class="tg-yw4l"><span id="GCGF1"></span></td>
+    <td class="tg-yw4l"><span id="GCGA1"></span></td>
+    <td class="tg-yw4l"><span id="GCGD1"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">3</td>
+    <td class="tg-yw4l"><span id="GCFlag2"><img src='Flags/Peru.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GCTeam2">Peru</span></td>
+    <td class="tg-yw4l"><span id="GCPts2"></span></td>
+    <td class="tg-yw4l"><span id="GCPld2"></span></td>
+    <td class="tg-yw4l"><span id="GCW2"></span></td>
+    <td class="tg-yw4l"><span id="GCD2"></span></td>
+    <td class="tg-yw4l"><span id="GCL2"></span></td>
+    <td class="tg-yw4l"><span id="GCGF2"></span></td>
+    <td class="tg-yw4l"><span id="GCGA2"></span></td>
+    <td class="tg-yw4l"><span id="GCGD2"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">4</td>
+    <td class="tg-yw4l"><span id="GCFlag3"><img src='Flags/Denmark.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GCTeam3">Denmark</span></td>
+    <td class="tg-yw4l"><span id="GCPts3"></span></td>
+    <td class="tg-yw4l"><span id="GCPld3"></span></td>
+    <td class="tg-yw4l"><span id="GCW3"></span></td>
+    <td class="tg-yw4l"><span id="GCD3"></span></td>
+    <td class="tg-yw4l"><span id="GCL3"></span></td>
+    <td class="tg-yw4l"><span id="GCGF3"></span></td>
+    <td class="tg-yw4l"><span id="GCGA3"></span></td>
+    <td class="tg-yw4l"><span id="GCGD3"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+</table>
+<!-- Menu for tied results -->
+<div class="dropdown">
+  <!--  <button onclick="myFunction()" class="dropbtn">Dropdown</button> -->
+  <div id="GCTieFirst" class="dropdown-content">
+      <span id="GCTieFirstText">Test</span>
+  </div>
+  <div id="GCTieSecong" class="dropdown-content">
+    <span id="GCTieSecongText">Test</span>
+  </div>
+</div>
+<!-- Start of Group Games-->
+<table class="tg">
+  <tr>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Flag</th>
+    <th class="tg-031e">Score</th>
+    <th class="tg-031e">x</th>
+    <th class="tg-031e">Score</th>
+    <th class="tg-031e">Flag</th>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Date</th>
+    <th class="tg-yw4l">L</th>
+  </tr>
+  <tr>
+    <td class="tg-031e">France</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GC1H" size="0" type="number" placeholder="?" value="3" oninput="groupAcalc('GC')" onchange="groupAcalc('GC')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GC1A" size="0" type="number" placeholder="?" oninput="groupAcalc('GC')" onchange="groupAcalc('GC')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Australia</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Peru</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GC2H" size="0" type="number" placeholder="?" value="2" oninput="groupAcalc('GC')" onchange="groupAcalc('GC')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GC2A" size="0" type="number" placeholder="?" oninput="groupAcalc('GC')" onchange="groupAcalc('GC')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Denmark</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Denmark</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GC3H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GC')" onchange="groupAcalc('GC')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GC3A" size="0" type="number" placeholder="?" oninput="groupAcalc('GC')" onchange="groupAcalc('GC')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Australia</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">France</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GC4H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GC')" onchange="groupAcalc('GC')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GC4A" size="0" type="number" placeholder="?" oninput="groupAcalc('GC')" onchange="groupAcalc('GC')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Peru</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Denmark</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GC5H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GC')" onchange="groupAcalc('GC')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GC5A" size="0" type="number" placeholder="?" oninput="groupAcalc('GC')" onchange="groupAcalc('GC')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">France</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Australia</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GC6H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GC')" onchange="groupAcalc('GC')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GC6A" size="0" type="number" placeholder="?" oninput="groupAcalc('GC')" onchange="groupAcalc('GC')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Peru</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+</table>
+</div>  
+
+<button class="accordion">Group D
+<span id="GD2img"><img src='Flags/2nd.png' width=35px height=21px></span>
+<span id="GD1img"><img src='Flags/1st.png' width=35px height=21px></span>
+</button>
+
+<div class="panel">
+<!-- Group D -->
+<!-- Group Summary -->
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l">Pos</th>
+    <th class="tg-yw4l">Flag</th>
+    <th class="tg-yw4l">Team</th>
+    <th class="tg-yw4l">Pts</th>
+    <th class="tg-yw4l">Pld</th>
+    <th class="tg-yw4l">W</th>
+    <th class="tg-yw4l">D</th>
+    <th class="tg-yw4l">L</th>
+    <th class="tg-yw4l">GF</th>
+    <th class="tg-yw4l">GA</th>
+    <th class="tg-yw4l">GD</th>
+    <th class="tg-yw4l">Qual</th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">1</td>
+    <td class="tg-yw4l"><span id="GDFlag0"><img src='Flags/Argentina.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GDTeam0">Argentina</span></td>
+    <td class="tg-yw4l"><span id="GDPts0"></span></td>
+    <td class="tg-yw4l"><span id="GDPld0"></span></td>
+    <td class="tg-yw4l"><span id="GDW0"></span></td>
+    <td class="tg-yw4l"><span id="GDD0"></span></td>
+    <td class="tg-yw4l"><span id="GDL0"></span></td>
+    <td class="tg-yw4l"><span id="GDGF0"></span></td>
+    <td class="tg-yw4l"><span id="GDGA0"></span></td>
+    <td class="tg-yw4l"><span id="GDGD0"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">2</td>
+    <td class="tg-yw4l"><span id="GDFlag1"><img src='Flags/Iceland.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GDTeam1">Iceland</span></td>
+    <td class="tg-yw4l"><span id="GDPts1"></span></td>
+    <td class="tg-yw4l"><span id="GDPld1"></span></td>
+    <td class="tg-yw4l"><span id="GDW1"></span></td>
+    <td class="tg-yw4l"><span id="GDD1"></span></td>
+    <td class="tg-yw4l"><span id="GDL1"></span></td>
+    <td class="tg-yw4l"><span id="GDGF1"></span></td>
+    <td class="tg-yw4l"><span id="GDGA1"></span></td>
+    <td class="tg-yw4l"><span id="GDGD1"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">3</td>
+    <td class="tg-yw4l"><span id="GDFlag2"><img src='Flags/Croatia.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GDTeam2">Croatia</span></td>
+    <td class="tg-yw4l"><span id="GDPts2"></span></td>
+    <td class="tg-yw4l"><span id="GDPld2"></span></td>
+    <td class="tg-yw4l"><span id="GDW2"></span></td>
+    <td class="tg-yw4l"><span id="GDD2"></span></td>
+    <td class="tg-yw4l"><span id="GDL2"></span></td>
+    <td class="tg-yw4l"><span id="GDGF2"></span></td>
+    <td class="tg-yw4l"><span id="GDGA2"></span></td>
+    <td class="tg-yw4l"><span id="GDGD2"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">4</td>
+    <td class="tg-yw4l"><span id="GDFlag3"><img src='Flags/Nigeria.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GDTeam3">Nigeria</span></td>
+    <td class="tg-yw4l"><span id="GDPts3"></span></td>
+    <td class="tg-yw4l"><span id="GDPld3"></span></td>
+    <td class="tg-yw4l"><span id="GDW3"></span></td>
+    <td class="tg-yw4l"><span id="GDD3"></span></td>
+    <td class="tg-yw4l"><span id="GDL3"></span></td>
+    <td class="tg-yw4l"><span id="GDGF3"></span></td>
+    <td class="tg-yw4l"><span id="GDGA3"></span></td>
+    <td class="tg-yw4l"><span id="GDGD3"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+</table>
+<!-- Menu for tied results -->
+<div class="dropdown">
+  <!--  <button onclick="myFunction()" class="dropbtn">Dropdown</button> -->
+  <div id="GDTieFirst" class="dropdown-content">
+      <span id="GDTieFirstText">Test</span>
+  </div>
+  <div id="GDTieSecong" class="dropdown-content">
+    <span id="GDTieSecongText">Test</span>
+  </div>
+</div>
+<!-- Start of Group Games-->
+<table class="tg">
+  <tr>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Flag</th>
+    <th class="tg-031e">Score</th>
+    <th class="tg-031e">x</th>
+    <th class="tg-031e">Score</th>
+    <th class="tg-031e">Flag</th>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Date</th>
+    <th class="tg-yw4l">L</th>
+  </tr>
+  <tr>
+    <td class="tg-031e">Argentina</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GD1H" size="0" type="number" placeholder="?" value="3" oninput="groupAcalc('GD')" onchange="groupAcalc('GD')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GD1A" size="0" type="number" placeholder="?" oninput="groupAcalc('GD')" onchange="groupAcalc('GD')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Iceland</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Croatia</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GD2H" size="0" type="number" placeholder="?" value="2" oninput="groupAcalc('GD')" onchange="groupAcalc('GD')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GD2A" size="0" type="number" placeholder="?" oninput="groupAcalc('GD')" onchange="groupAcalc('GD')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Nigeria</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Argentina</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GD3H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GD')" onchange="groupAcalc('GD')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GD3A" size="0" type="number" placeholder="?" oninput="groupAcalc('GD')" onchange="groupAcalc('GD')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Croatia</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Nigeria</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GD4H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GD')" onchange="groupAcalc('GD')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GD4A" size="0" type="number" placeholder="?" oninput="groupAcalc('GD')" onchange="groupAcalc('GD')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Iceland</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Nigeria</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GD5H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GD')" onchange="groupAcalc('GD')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GD5A" size="0" type="number" placeholder="?" oninput="groupAcalc('GD')" onchange="groupAcalc('GD')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Argentina</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Iceland</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GD6H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GD')" onchange="groupAcalc('GD')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GD6A" size="0" type="number" placeholder="?" oninput="groupAcalc('GD')" onchange="groupAcalc('GD')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Croatia</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+</table>
+</div>  
+
+<button class="accordion">Group E
+<span id="GE2img"><img src='Flags/2nd.png' width=35px height=21px></span>
+<span id="GE1img"><img src='Flags/1st.png' width=35px height=21px></span>
+</button>
+
+<div class="panel">
+<!-- Group E -->
+<!-- Group Summary -->
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l">Pos</th>
+    <th class="tg-yw4l">Flag</th>
+    <th class="tg-yw4l">Team</th>
+    <th class="tg-yw4l">Pts</th>
+    <th class="tg-yw4l">Pld</th>
+    <th class="tg-yw4l">W</th>
+    <th class="tg-yw4l">D</th>
+    <th class="tg-yw4l">L</th>
+    <th class="tg-yw4l">GF</th>
+    <th class="tg-yw4l">GA</th>
+    <th class="tg-yw4l">GD</th>
+    <th class="tg-yw4l">Qual</th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">1</td>
+    <td class="tg-yw4l"><span id="GEFlag0"><img src='Flags/Brazil.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GETeam0">Brazil</span></td>
+    <td class="tg-yw4l"><span id="GEPts0"></span></td>
+    <td class="tg-yw4l"><span id="GEPld0"></span></td>
+    <td class="tg-yw4l"><span id="GEW0"></span></td>
+    <td class="tg-yw4l"><span id="GED0"></span></td>
+    <td class="tg-yw4l"><span id="GEL0"></span></td>
+    <td class="tg-yw4l"><span id="GEGF0"></span></td>
+    <td class="tg-yw4l"><span id="GEGA0"></span></td>
+    <td class="tg-yw4l"><span id="GEGD0"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">2</td>
+    <td class="tg-yw4l"><span id="GEFlag1"><img src='Flags/Switzerland.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GETeam1">Switzerland</span></td>
+    <td class="tg-yw4l"><span id="GEPts1"></span></td>
+    <td class="tg-yw4l"><span id="GEPld1"></span></td>
+    <td class="tg-yw4l"><span id="GEW1"></span></td>
+    <td class="tg-yw4l"><span id="GED1"></span></td>
+    <td class="tg-yw4l"><span id="GEL1"></span></td>
+    <td class="tg-yw4l"><span id="GEGF1"></span></td>
+    <td class="tg-yw4l"><span id="GEGA1"></span></td>
+    <td class="tg-yw4l"><span id="GEGD1"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">3</td>
+    <td class="tg-yw4l"><span id="GEFlag2"><img src='Flags/Costa Rica.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GETeam2">Costa Rica</span></td>
+    <td class="tg-yw4l"><span id="GEPts2"></span></td>
+    <td class="tg-yw4l"><span id="GEPld2"></span></td>
+    <td class="tg-yw4l"><span id="GEW2"></span></td>
+    <td class="tg-yw4l"><span id="GED2"></span></td>
+    <td class="tg-yw4l"><span id="GEL2"></span></td>
+    <td class="tg-yw4l"><span id="GEGF2"></span></td>
+    <td class="tg-yw4l"><span id="GEGA2"></span></td>
+    <td class="tg-yw4l"><span id="GEGD2"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">4</td>
+    <td class="tg-yw4l"><span id="GEFlag3"><img src='Flags/Serbia.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GETeam3">Serbia</span></td>
+    <td class="tg-yw4l"><span id="GEPts3"></span></td>
+    <td class="tg-yw4l"><span id="GEPld3"></span></td>
+    <td class="tg-yw4l"><span id="GEW3"></span></td>
+    <td class="tg-yw4l"><span id="GED3"></span></td>
+    <td class="tg-yw4l"><span id="GEL3"></span></td>
+    <td class="tg-yw4l"><span id="GEGF3"></span></td>
+    <td class="tg-yw4l"><span id="GEGA3"></span></td>
+    <td class="tg-yw4l"><span id="GEGD3"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+</table>
+<!-- Menu for tied results -->
+<div class="dropdown">
+  <!--  <button onclick="myFunction()" class="dropbtn">Dropdown</button> -->
+  <div id="GETieFirst" class="dropdown-content">
+      <span id="GETieFirstText">Test</span>
+  </div>
+  <div id="GETieSecong" class="dropdown-content">
+    <span id="GETieSecongText">Test</span>
+  </div>
+</div>
+<!-- Start of Group Games-->
+<table class="tg">
+  <tr>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Flag</th>
+    <th class="tg-031e">Score</th>
+    <th class="tg-031e">x</th>
+    <th class="tg-031e">Score</th>
+    <th class="tg-031e">Flag</th>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Date</th>
+    <th class="tg-yw4l">L</th>
+  </tr>
+  <tr>
+    <td class="tg-031e">Costa Rica</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GE1H" size="0" type="number" placeholder="?" value="3" oninput="groupAcalc('GE')" onchange="groupAcalc('GE')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GE1A" size="0" type="number" placeholder="?" oninput="groupAcalc('GE')" onchange="groupAcalc('GE')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Serbia</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Brazil</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GE2H" size="0" type="number" placeholder="?" value="2" oninput="groupAcalc('GE')" onchange="groupAcalc('GE')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GE2A" size="0" type="number" placeholder="?" oninput="groupAcalc('GE')" onchange="groupAcalc('GE')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Switzerland</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Brazil</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GE3H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GE')" onchange="groupAcalc('GE')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GE3A" size="0" type="number" placeholder="?" oninput="groupAcalc('GE')" onchange="groupAcalc('GE')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Costa Rica</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Serbia</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GE4H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GE')" onchange="groupAcalc('GE')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GE4A" size="0" type="number" placeholder="?" oninput="groupAcalc('GE')" onchange="groupAcalc('GE')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Switzerland</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Serbia</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GE5H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GE')" onchange="groupAcalc('GE')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GE5A" size="0" type="number" placeholder="?" oninput="groupAcalc('GE')" onchange="groupAcalc('GE')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Brazil</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Switzerland</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GE6H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GE')" onchange="groupAcalc('GE')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GE6A" size="0" type="number" placeholder="?" oninput="groupAcalc('GE')" onchange="groupAcalc('GE')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Costa Rica</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+</table>
+</div>  
+
+<button class="accordion">Group F
+<span id="GF2img"><img src='Flags/2nd.png' width=35px height=21px></span>
+<span id="GF1img"><img src='Flags/1st.png' width=35px height=21px></span>
+</button>
+
+<div class="panel">
+<!-- Group F -->
+<!-- Group Summary -->
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l">Pos</th>
+    <th class="tg-yw4l">Flag</th>
+    <th class="tg-yw4l">Team</th>
+    <th class="tg-yw4l">Pts</th>
+    <th class="tg-yw4l">Pld</th>
+    <th class="tg-yw4l">W</th>
+    <th class="tg-yw4l">D</th>
+    <th class="tg-yw4l">L</th>
+    <th class="tg-yw4l">GF</th>
+    <th class="tg-yw4l">GA</th>
+    <th class="tg-yw4l">GD</th>
+    <th class="tg-yw4l">Qual</th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">1</td>
+    <td class="tg-yw4l"><span id="GFFlag0"><img src='Flags/Germany.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GFTeam0">Germany</span></td>
+    <td class="tg-yw4l"><span id="GFPts0"></span></td>
+    <td class="tg-yw4l"><span id="GFPld0"></span></td>
+    <td class="tg-yw4l"><span id="GFW0"></span></td>
+    <td class="tg-yw4l"><span id="GFD0"></span></td>
+    <td class="tg-yw4l"><span id="GFL0"></span></td>
+    <td class="tg-yw4l"><span id="GFGF0"></span></td>
+    <td class="tg-yw4l"><span id="GFGA0"></span></td>
+    <td class="tg-yw4l"><span id="GFGD0"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">2</td>
+    <td class="tg-yw4l"><span id="GFFlag1"><img src='Flags/Mexico.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GFTeam1">Mexico</span></td>
+    <td class="tg-yw4l"><span id="GFPts1"></span></td>
+    <td class="tg-yw4l"><span id="GFPld1"></span></td>
+    <td class="tg-yw4l"><span id="GFW1"></span></td>
+    <td class="tg-yw4l"><span id="GFD1"></span></td>
+    <td class="tg-yw4l"><span id="GFL1"></span></td>
+    <td class="tg-yw4l"><span id="GFGF1"></span></td>
+    <td class="tg-yw4l"><span id="GFGA1"></span></td>
+    <td class="tg-yw4l"><span id="GFGD1"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">3</td>
+    <td class="tg-yw4l"><span id="GFFlag2"><img src='Flags/Sweden.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GFTeam2">Sweden</span></td>
+    <td class="tg-yw4l"><span id="GFPts2"></span></td>
+    <td class="tg-yw4l"><span id="GFPld2"></span></td>
+    <td class="tg-yw4l"><span id="GFW2"></span></td>
+    <td class="tg-yw4l"><span id="GFD2"></span></td>
+    <td class="tg-yw4l"><span id="GFL2"></span></td>
+    <td class="tg-yw4l"><span id="GFGF2"></span></td>
+    <td class="tg-yw4l"><span id="GFGA2"></span></td>
+    <td class="tg-yw4l"><span id="GFGD2"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">4</td>
+    <td class="tg-yw4l"><span id="GFFlag3"><img src='Flags/South Korea.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GFTeam3">South Korea</span></td>
+    <td class="tg-yw4l"><span id="GFPts3"></span></td>
+    <td class="tg-yw4l"><span id="GFPld3"></span></td>
+    <td class="tg-yw4l"><span id="GFW3"></span></td>
+    <td class="tg-yw4l"><span id="GFD3"></span></td>
+    <td class="tg-yw4l"><span id="GFL3"></span></td>
+    <td class="tg-yw4l"><span id="GFGF3"></span></td>
+    <td class="tg-yw4l"><span id="GFGA3"></span></td>
+    <td class="tg-yw4l"><span id="GFGD3"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+</table>
+<!-- Menu for tied results -->
+<div class="dropdown">
+  <!--  <button onclick="myFunction()" class="dropbtn">Dropdown</button> -->
+  <div id="GFTieFirst" class="dropdown-content">
+      <span id="GFTieFirstText">Test</span>
+  </div>
+  <div id="GFTieSecong" class="dropdown-content">
+    <span id="GFTieSecongText">Test</span>
+  </div>
+</div>
+<!-- Start of Group Games-->
+<table class="tg">
+  <tr>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Flag</th>
+    <th class="tg-031e">Score</th>
+    <th class="tg-031e">x</th>
+    <th class="tg-031e">Score</th>
+    <th class="tg-031e">Flag</th>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Date</th>
+    <th class="tg-yw4l">L</th>
+  </tr>
+  <tr>
+    <td class="tg-031e">Germany</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GF1H" size="0" type="number" placeholder="?" value="3" oninput="groupAcalc('GF')" onchange="groupAcalc('GF')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GF1A" size="0" type="number" placeholder="?" oninput="groupAcalc('GF')" onchange="groupAcalc('GF')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Mexico</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Sweden</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GF2H" size="0" type="number" placeholder="?" value="2" oninput="groupAcalc('GF')" onchange="groupAcalc('GF')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GF2A" size="0" type="number" placeholder="?" oninput="groupAcalc('GF')" onchange="groupAcalc('GF')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">South Korea</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">South Korea</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GF3H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GF')" onchange="groupAcalc('GF')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GF3A" size="0" type="number" placeholder="?" oninput="groupAcalc('GF')" onchange="groupAcalc('GF')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Mexico</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Germany</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GF4H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GF')" onchange="groupAcalc('GF')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GF4A" size="0" type="number" placeholder="?" oninput="groupAcalc('GF')" onchange="groupAcalc('GF')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Sweden</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">South Korea</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GF5H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GF')" onchange="groupAcalc('GF')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GF5A" size="0" type="number" placeholder="?" oninput="groupAcalc('GF')" onchange="groupAcalc('GF')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Germany</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Mexico</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GF6H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GF')" onchange="groupAcalc('GF')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GF6A" size="0" type="number" placeholder="?" oninput="groupAcalc('GF')" onchange="groupAcalc('GF')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Sweden</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+</table>
+</div>  
+
+<button class="accordion">Group G
+<span id="GG2img"><img src='Flags/2nd.png' width=35px height=21px></span>
+<span id="GG1img"><img src='Flags/1st.png' width=35px height=21px></span>
+</button>
+
+<div class="panel">
+<!-- Group G -->
+<!-- Group Summary -->
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l">Pos</th>
+    <th class="tg-yw4l">Flag</th>
+    <th class="tg-yw4l">Team</th>
+    <th class="tg-yw4l">Pts</th>
+    <th class="tg-yw4l">Pld</th>
+    <th class="tg-yw4l">W</th>
+    <th class="tg-yw4l">D</th>
+    <th class="tg-yw4l">L</th>
+    <th class="tg-yw4l">GF</th>
+    <th class="tg-yw4l">GA</th>
+    <th class="tg-yw4l">GD</th>
+    <th class="tg-yw4l">Qual</th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">1</td>
+    <td class="tg-yw4l"><span id="GGFlag0"><img src='Flags/Belgium.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GGTeam0">Belgium</span></td>
+    <td class="tg-yw4l"><span id="GGPts0"></span></td>
+    <td class="tg-yw4l"><span id="GGPld0"></span></td>
+    <td class="tg-yw4l"><span id="GGW0"></span></td>
+    <td class="tg-yw4l"><span id="GGD0"></span></td>
+    <td class="tg-yw4l"><span id="GGL0"></span></td>
+    <td class="tg-yw4l"><span id="GGGF0"></span></td>
+    <td class="tg-yw4l"><span id="GGGA0"></span></td>
+    <td class="tg-yw4l"><span id="GGGD0"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">2</td>
+    <td class="tg-yw4l"><span id="GGFlag1"><img src='Flags/Panama.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GGTeam1">Panama</span></td>
+    <td class="tg-yw4l"><span id="GGPts1"></span></td>
+    <td class="tg-yw4l"><span id="GGPld1"></span></td>
+    <td class="tg-yw4l"><span id="GGW1"></span></td>
+    <td class="tg-yw4l"><span id="GGD1"></span></td>
+    <td class="tg-yw4l"><span id="GGL1"></span></td>
+    <td class="tg-yw4l"><span id="GGGF1"></span></td>
+    <td class="tg-yw4l"><span id="GGGA1"></span></td>
+    <td class="tg-yw4l"><span id="GGGD1"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">3</td>
+    <td class="tg-yw4l"><span id="GGFlag2"><img src='Flags/Tunisia.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GGTeam2">Tunisia</span></td>
+    <td class="tg-yw4l"><span id="GGPts2"></span></td>
+    <td class="tg-yw4l"><span id="GGPld2"></span></td>
+    <td class="tg-yw4l"><span id="GGW2"></span></td>
+    <td class="tg-yw4l"><span id="GGD2"></span></td>
+    <td class="tg-yw4l"><span id="GGL2"></span></td>
+    <td class="tg-yw4l"><span id="GGGF2"></span></td>
+    <td class="tg-yw4l"><span id="GGGA2"></span></td>
+    <td class="tg-yw4l"><span id="GGGD2"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">4</td>
+    <td class="tg-yw4l"><span id="GGFlag3"><img src='Flags/England.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GGTeam3">England</span></td>
+    <td class="tg-yw4l"><span id="GGPts3"></span></td>
+    <td class="tg-yw4l"><span id="GGPld3"></span></td>
+    <td class="tg-yw4l"><span id="GGW3"></span></td>
+    <td class="tg-yw4l"><span id="GGD3"></span></td>
+    <td class="tg-yw4l"><span id="GGL3"></span></td>
+    <td class="tg-yw4l"><span id="GGGF3"></span></td>
+    <td class="tg-yw4l"><span id="GGGA3"></span></td>
+    <td class="tg-yw4l"><span id="GGGD3"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+</table>
+<!-- Menu for tied results -->
+<div class="dropdown">
+  <!--  <button onclick="myFunction()" class="dropbtn">Dropdown</button> -->
+  <div id="GGTieFirst" class="dropdown-content">
+      <span id="GGTieFirstText">Test</span>
+  </div>
+  <div id="GGTieSecong" class="dropdown-content">
+    <span id="GGTieSecongText">Test</span>
+  </div>
+</div>
+<!-- Start of Group Games-->
+<table class="tg">
+  <tr>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Flag</th>
+    <th class="tg-031e">Score</th>
+    <th class="tg-031e">x</th>
+    <th class="tg-031e">Score</th>
+    <th class="tg-031e">Flag</th>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Date</th>
+    <th class="tg-yw4l">L</th>
+  </tr>
+  <tr>
+    <td class="tg-031e">Belgium</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GG1H" size="0" type="number" placeholder="?" value="3" oninput="groupAcalc('GG')" onchange="groupAcalc('GG')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GG1A" size="0" type="number" placeholder="?" oninput="groupAcalc('GG')" onchange="groupAcalc('GG')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Panama</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Tunisia</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GG2H" size="0" type="number" placeholder="?" value="2" oninput="groupAcalc('GG')" onchange="groupAcalc('GG')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GG2A" size="0" type="number" placeholder="?" oninput="groupAcalc('GG')" onchange="groupAcalc('GG')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">England</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Belgium</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GG3H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GG')" onchange="groupAcalc('GG')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GG3A" size="0" type="number" placeholder="?" oninput="groupAcalc('GG')" onchange="groupAcalc('GG')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Tunisia</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">England</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GG4H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GG')" onchange="groupAcalc('GG')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GG4A" size="0" type="number" placeholder="?" oninput="groupAcalc('GG')" onchange="groupAcalc('GG')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Panama</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">England</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GG5H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GG')" onchange="groupAcalc('GG')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GG5A" size="0" type="number" placeholder="?" oninput="groupAcalc('GG')" onchange="groupAcalc('GG')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Belgium</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Panama</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GG6H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GG')" onchange="groupAcalc('GG')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GG6A" size="0" type="number" placeholder="?" oninput="groupAcalc('GG')" onchange="groupAcalc('GG')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Tunisia</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+</table>
+</div>  
+
+<button class="accordion">Group H
+<span id="GH2img"><img src='Flags/2nd.png' width=35px height=21px></span>
+<span id="GH1img"><img src='Flags/1st.png' width=35px height=21px></span>
+</button>
+
+<div class="panel">
+<!-- Group H -->
+<!-- Group Summary -->
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l">Pos</th>
+    <th class="tg-yw4l">Flag</th>
+    <th class="tg-yw4l">Team</th>
+    <th class="tg-yw4l">Pts</th>
+    <th class="tg-yw4l">Pld</th>
+    <th class="tg-yw4l">W</th>
+    <th class="tg-yw4l">D</th>
+    <th class="tg-yw4l">L</th>
+    <th class="tg-yw4l">GF</th>
+    <th class="tg-yw4l">GA</th>
+    <th class="tg-yw4l">GD</th>
+    <th class="tg-yw4l">Qual</th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">1</td>
+    <td class="tg-yw4l"><span id="GHFlag0"><img src='Flags/Poland.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GHTeam0">Poland</span></td>
+    <td class="tg-yw4l"><span id="GHPts0"></span></td>
+    <td class="tg-yw4l"><span id="GHPld0"></span></td>
+    <td class="tg-yw4l"><span id="GHW0"></span></td>
+    <td class="tg-yw4l"><span id="GHD0"></span></td>
+    <td class="tg-yw4l"><span id="GHL0"></span></td>
+    <td class="tg-yw4l"><span id="GHGF0"></span></td>
+    <td class="tg-yw4l"><span id="GHGA0"></span></td>
+    <td class="tg-yw4l"><span id="GHGD0"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">2</td>
+    <td class="tg-yw4l"><span id="GHFlag1"><img src='Flags/Senegal.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GHTeam1">Senegal</span></td>
+    <td class="tg-yw4l"><span id="GHPts1"></span></td>
+    <td class="tg-yw4l"><span id="GHPld1"></span></td>
+    <td class="tg-yw4l"><span id="GHW1"></span></td>
+    <td class="tg-yw4l"><span id="GHD1"></span></td>
+    <td class="tg-yw4l"><span id="GHL1"></span></td>
+    <td class="tg-yw4l"><span id="GHGF1"></span></td>
+    <td class="tg-yw4l"><span id="GHGA1"></span></td>
+    <td class="tg-yw4l"><span id="GHGD1"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">3</td>
+    <td class="tg-yw4l"><span id="GHFlag2"><img src='Flags/Colombia.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GHTeam2">Colombia</span></td>
+    <td class="tg-yw4l"><span id="GHPts2"></span></td>
+    <td class="tg-yw4l"><span id="GHPld2"></span></td>
+    <td class="tg-yw4l"><span id="GHW2"></span></td>
+    <td class="tg-yw4l"><span id="GHD2"></span></td>
+    <td class="tg-yw4l"><span id="GHL2"></span></td>
+    <td class="tg-yw4l"><span id="GHGF2"></span></td>
+    <td class="tg-yw4l"><span id="GHGA2"></span></td>
+    <td class="tg-yw4l"><span id="GHGD2"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">4</td>
+    <td class="tg-yw4l"><span id="GHFlag3"><img src='Flags/Japan.png' width=21px></span></td>
+    <td class="tg-yw4l"><span id="GHTeam3">Japan</span></td>
+    <td class="tg-yw4l"><span id="GHPts3"></span></td>
+    <td class="tg-yw4l"><span id="GHPld3"></span></td>
+    <td class="tg-yw4l"><span id="GHW3"></span></td>
+    <td class="tg-yw4l"><span id="GHD3"></span></td>
+    <td class="tg-yw4l"><span id="GHL3"></span></td>
+    <td class="tg-yw4l"><span id="GHGF3"></span></td>
+    <td class="tg-yw4l"><span id="GHGA3"></span></td>
+    <td class="tg-yw4l"><span id="GHGD3"></span></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+</table>
+<!-- Menu for tied results -->
+<div class="dropdown">
+  <!--  <button onclick="myFunction()" class="dropbtn">Dropdown</button> -->
+  <div id="GHTieFirst" class="dropdown-content">
+      <span id="GHTieFirstText">Test</span>
+  </div>
+  <div id="GHTieSecong" class="dropdown-content">
+    <span id="GHTieSecongText">Test</span>
+  </div>
+</div>
+<!-- Start of Group Games-->
+<table class="tg">
+  <tr>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Flag</th>
+    <th class="tg-031e">Score</th>
+    <th class="tg-031e">x</th>
+    <th class="tg-031e">Score</th>
+    <th class="tg-031e">Flag</th>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Date</th>
+    <th class="tg-yw4l">L</th>
+  </tr>
+  <tr>
+    <td class="tg-031e">Colombia</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GH1H" size="0" type="number" placeholder="?" value="3" oninput="groupAcalc('GH')" onchange="groupAcalc('GH')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GH1A" size="0" type="number" placeholder="?" oninput="groupAcalc('GH')" onchange="groupAcalc('GH')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Japan</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Poland</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GH2H" size="0" type="number" placeholder="?" value="2" oninput="groupAcalc('GH')" onchange="groupAcalc('GH')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GH2A" size="0" type="number" placeholder="?" oninput="groupAcalc('GH')" onchange="groupAcalc('GH')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Senegal</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Japan</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GH3H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GH')" onchange="groupAcalc('GH')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GH3A" size="0" type="number" placeholder="?" oninput="groupAcalc('GH')" onchange="groupAcalc('GH')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Senegal</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Poland</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GH4H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GH')" onchange="groupAcalc('GH')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GH4A" size="0" type="number" placeholder="?" oninput="groupAcalc('GH')" onchange="groupAcalc('GH')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Colombia</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Japan</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GH5H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GH')" onchange="groupAcalc('GH')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GH5A" size="0" type="number" placeholder="?" oninput="groupAcalc('GH')" onchange="groupAcalc('GH')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Poland</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Senegal</td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e"><input id="GH6H" size="0" type="number" placeholder="?" value="0" oninput="groupAcalc('GH')" onchange="groupAcalc('GH')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="GH6A" size="0" type="number" placeholder="?" oninput="groupAcalc('GH')" onchange="groupAcalc('GH')"></td>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">Colombia</td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+</table>
+</div>  
+
+
+<button class="accordion">Round of 16
+</button>
+
+<div class="panel">
+<!-- Round of 16 -->
+<table class="tg">
+  <tr>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Flag</th>
+    <th class="tg-031e">Score</th>
+    <th class="tg-031e">x</th>
+    <th class="tg-031e">Score</th>
+    <th class="tg-031e">Flag</th>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Date</th>
+    <th class="tg-yw4l">L</th>
+  </tr>
+  <tr>
+    <td class="tg-031e"><span id="R00">?</span></td>
+    <td class="tg-031e"><span id="FlagR00"></span></td>
+    <td class="tg-031e"><input id="RR00" size="0" type="number" placeholder="?" oninput="run_knockout('0')" onchange="run_knockout('0')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="RR01" size="0" type="number" placeholder="?" oninput="run_knockout('0')" onchange="run_knockout('0')"></td>
+    <td class="tg-031e"><span id="FlagR01"></span></td>
+    <td class="tg-031e"><span id="R01">?</span></td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr id="R00Tie" class="knockout-tie-content">
+  <form>
+  	<td colspan=2>Penalty winner:</td>
+  	<td colspan=1><input type="radio" name="R00TieOptions" value="0" checked="checked" oninput="run_knockout('0')" onchange="run_knockout('0')"/></td>
+  	<td>x</td>
+  	<td colspan=1><input type="radio" name="R00TieOptions" value="1" oninput="run_knockout('0')" onchange="run_knockout('0')"/></td>
+  </form>
+  </tr>
+  <tr>
+    <td class="tg-031e"><span id="R02">?</span></td>
+    <td class="tg-031e"><span id="FlagR02"></span></td>
+    <td class="tg-031e"><input id="RR02" size="0" type="number" placeholder="?" oninput="run_knockout('0')" onchange="run_knockout('0')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="RR03" size="0" type="number" placeholder="?" oninput="run_knockout('0')" onchange="run_knockout('0')"></td>
+    <td class="tg-031e"><span id="FlagR03"></span></td>
+    <td class="tg-031e"><span id="R03">?</span></td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr id="R02Tie" class="knockout-tie-content">
+  <form>
+  	<td colspan=2>Penalty winner:</td>
+  	<td colspan=1><input type="radio" name="R02TieOptions" value="0" checked="checked" oninput="run_knockout('0')" onchange="run_knockout('0')"/></td>
+  	<td>x</td>
+  	<td colspan=1><input type="radio" name="R02TieOptions" value="1" oninput="run_knockout('0')" onchange="run_knockout('0')"/></td>
+  </form>
+  </tr>
+  <tr>
+    <td class="tg-031e"><span id="R04">?</span></td>
+    <td class="tg-031e"><span id="FlagR04"></span></td>
+    <td class="tg-031e"><input id="RR04" size="0" type="number" placeholder="?" oninput="run_knockout('0')" onchange="run_knockout('0')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="RR05" size="0" type="number" placeholder="?" oninput="run_knockout('0')" onchange="run_knockout('0')"></td>
+    <td class="tg-031e"><span id="FlagR05"></span></td>
+    <td class="tg-031e"><span id="R05">?</span></td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr id="R04Tie" class="knockout-tie-content">
+  <form>
+  	<td colspan=2>Penalty winner:</td>
+  	<td colspan=1><input type="radio" name="R04TieOptions" value="0" checked="checked" oninput="run_knockout('0')" onchange="run_knockout('0')"/></td>
+  	<td>x</td>
+  	<td colspan=1><input type="radio" name="R04TieOptions" value="1" oninput="run_knockout('0')" onchange="run_knockout('0')"/></td>
+  </form>
+  </tr>
+  <tr>
+    <td class="tg-031e"><span id="R06">?</span></td>
+    <td class="tg-031e"><span id="FlagR06"></span></td>
+    <td class="tg-031e"><input id="RR06" size="0" type="number" placeholder="?" oninput="run_knockout('0')" onchange="run_knockout('0')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="RR07" size="0" type="number" placeholder="?" oninput="run_knockout('0')" onchange="run_knockout('0')"></td>
+    <td class="tg-031e"><span id="FlagR07"></span></td>
+    <td class="tg-031e"><span id="R07">?</span></td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr id="R06Tie" class="knockout-tie-content">
+  <form>
+  	<td colspan=2>Penalty winner:</td>
+  	<td colspan=1><input type="radio" name="R06TieOptions" value="0" checked="checked" oninput="run_knockout('0')" onchange="run_knockout('0')"/></td>
+  	<td>x</td>
+  	<td colspan=1><input type="radio" name="R06TieOptions" value="1" oninput="run_knockout('0')" onchange="run_knockout('0')"/></td>
+  </form>
+  </tr>
+  <tr>
+    <td class="tg-031e"><span id="R08">?</span></td>
+    <td class="tg-031e"><span id="FlagR08"></span></td>
+    <td class="tg-031e"><input id="RR08" size="0" type="number" placeholder="?" oninput="run_knockout('0')" onchange="run_knockout('0')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="RR09" size="0" type="number" placeholder="?" oninput="run_knockout('0')" onchange="run_knockout('0')"></td>
+    <td class="tg-031e"><span id="FlagR09"></span></td>
+    <td class="tg-031e"><span id="R09">?</span></td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr id="R08Tie" class="knockout-tie-content">
+  <form>
+  	<td colspan=2>Penalty winner:</td>
+  	<td colspan=1><input type="radio" name="R08TieOptions" value="0" checked="checked" oninput="run_knockout('0')" onchange="run_knockout('0')"/></td>
+  	<td>x</td>
+  	<td colspan=1><input type="radio" name="R08TieOptions" value="1" oninput="run_knockout('0')" onchange="run_knockout('0')"/></td>
+  </form>
+  </tr>
+  <tr>
+    <td class="tg-031e"><span id="R010">?</span></td>
+    <td class="tg-031e"><span id="FlagR010"></span></td>
+    <td class="tg-031e"><input id="RR010" size="0" type="number" placeholder="?" oninput="run_knockout('0')" onchange="run_knockout('0')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="RR011" size="0" type="number" placeholder="?" oninput="run_knockout('0')" onchange="run_knockout('0')"></td>
+    <td class="tg-031e"><span id="FlagR011"></span></td>
+    <td class="tg-031e"><span id="R011">?</span></td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr id="R010Tie" class="knockout-tie-content">
+  <form>
+  	<td colspan=2>Penalty winner:</td>
+  	<td colspan=1><input type="radio" name="R010TieOptions" value="0" checked="checked" oninput="run_knockout('0')" onchange="run_knockout('0')"/></td>
+  	<td>x</td>
+  	<td colspan=1><input type="radio" name="R010TieOptions" value="1" oninput="run_knockout('0')" onchange="run_knockout('0')"/></td>
+  </form>
+  </tr>
+<tr>
+    <td class="tg-031e"><span id="R012">?</span></td>
+    <td class="tg-031e"><span id="FlagR012"></span></td>
+    <td class="tg-031e"><input id="RR012" size="0" type="number" placeholder="?" oninput="run_knockout('0')" onchange="run_knockout('0')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="RR013" size="0" type="number" placeholder="?" oninput="run_knockout('0')" onchange="run_knockout('0')"></td>
+    <td class="tg-031e"><span id="FlagR013"></span></td>
+    <td class="tg-031e"><span id="R013">?</span></td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr id="R012Tie" class="knockout-tie-content">
+  <form>
+  	<td colspan=2>Penalty winner:</td>
+  	<td colspan=1><input type="radio" name="R012TieOptions" value="0" checked="checked" oninput="run_knockout('0')" onchange="run_knockout('0')"/></td>
+  	<td>x</td>
+  	<td colspan=1><input type="radio" name="R012TieOptions" value="1" oninput="run_knockout('0')" onchange="run_knockout('0')"/></td>
+  </form>
+  </tr>
+  <tr>
+    <td class="tg-031e"><span id="R014">?</span></td>
+    <td class="tg-031e"><span id="FlagR014"></span></td>
+    <td class="tg-031e"><input id="RR014" size="0" type="number" placeholder="?" oninput="run_knockout('0')" onchange="run_knockout('0')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="RR015" size="0" type="number" placeholder="?" oninput="run_knockout('0')" onchange="run_knockout('0')"></td>
+    <td class="tg-031e"><span id="FlagR015"></span></td>
+    <td class="tg-031e"><span id="R015">?</span></td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr id="R014Tie" class="knockout-tie-content">
+  <form>
+  	<td colspan=2>Penalty winner:</td>
+  	<td colspan=1><input type="radio" name="R014TieOptions" value="0" checked="checked" oninput="run_knockout('0')" onchange="run_knockout('0')"/></td>
+  	<td>x</td>
+  	<td colspan=1><input type="radio" name="R014TieOptions" value="1" oninput="run_knockout('0')" onchange="run_knockout('0')"/></td>
+  </form>
+  </tr>
+</table>
+</div>  
+
+<button class="accordion">Quarter Finals
+</button>
+
+<div class="panel">
+<!-- Round of 16 -->
+<table class="tg">
+  <tr>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Flag</th>
+    <th class="tg-031e">Score</th>
+    <th class="tg-031e">x</th>
+    <th class="tg-031e">Score</th>
+    <th class="tg-031e">Flag</th>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Date</th>
+    <th class="tg-yw4l">L</th>
+  </tr>
+  <tr>
+    <td class="tg-031e"><span id="R10">?</span></td>
+    <td class="tg-031e"><span id="FlagR10"></span></td>
+    <td class="tg-031e"><input id="RR10" size="0" type="number" placeholder="?" oninput="run_knockout('1')" onchange="run_knockout('1')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="RR11" size="0" type="number" placeholder="?" oninput="run_knockout('1')" onchange="run_knockout('1')"></td>
+    <td class="tg-031e"><span id="FlagR11"></span></td>
+    <td class="tg-031e"><span id="R11">?</span></td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr id="R10Tie" class="knockout-tie-content">
+  <form>
+  	<td colspan=2>Penalty winner:</td>
+  	<td colspan=1><input type="radio" name="R10TieOptions" value="0" checked="checked" oninput="run_knockout('1')" onchange="run_knockout('1')"/></td>
+  	<td>x</td>
+  	<td colspan=1><input type="radio" name="R10TieOptions" value="1" oninput="run_knockout('1')" onchange="run_knockout('1')"/></td>
+  </form>
+  </tr>
+  <tr>
+    <td class="tg-031e"><span id="R12">?</span></td>
+    <td class="tg-031e"><span id="FlagR12"></span></td>
+    <td class="tg-031e"><input id="RR12" size="0" type="number" placeholder="?" oninput="run_knockout('1')" onchange="run_knockout('1')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="RR13" size="0" type="number" placeholder="?" oninput="run_knockout('1')" onchange="run_knockout('1')"></td>
+    <td class="tg-031e"><span id="FlagR13"></span></td>
+    <td class="tg-031e"><span id="R13">?</span></td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr id="R12Tie" class="knockout-tie-content">
+  <form>
+  	<td colspan=2>Penalty winner:</td>
+  	<td colspan=1><input type="radio" name="R12TieOptions" value="0" checked="checked" oninput="run_knockout('1')" onchange="run_knockout('1')"/></td>
+  	<td>x</td>
+  	<td colspan=1><input type="radio" name="R12TieOptions" value="1" oninput="run_knockout('1')" onchange="run_knockout('1')"/></td>
+  </form>
+  </tr>
+  <tr>
+    <td class="tg-031e"><span id="R14">?</span></td>
+    <td class="tg-031e"><span id="FlagR14"></span></td>
+    <td class="tg-031e"><input id="RR14" size="0" type="number" placeholder="?" oninput="run_knockout('1')" onchange="run_knockout('1')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="RR15" size="0" type="number" placeholder="?" oninput="run_knockout('1')" onchange="run_knockout('1')"></td>
+    <td class="tg-031e"><span id="FlagR15"></span></td>
+    <td class="tg-031e"><span id="R15">?</span></td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr id="R14Tie" class="knockout-tie-content">
+  <form>
+  	<td colspan=2>Penalty winner:</td>
+  	<td colspan=1><input type="radio" name="R14TieOptions" value="0" checked="checked" oninput="run_knockout('1')" onchange="run_knockout('1')"/></td>
+  	<td>x</td>
+  	<td colspan=1><input type="radio" name="R14TieOptions" value="1" oninput="run_knockout('1')" onchange="run_knockout('1')"/></td>
+  </form>
+  </tr>
+  <tr>
+    <td class="tg-031e"><span id="R16">?</span></td>
+    <td class="tg-031e"><span id="FlagR16"></span></td>
+    <td class="tg-031e"><input id="RR16" size="0" type="number" placeholder="?" oninput="run_knockout('1')" onchange="run_knockout('1')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="RR17" size="0" type="number" placeholder="?" oninput="run_knockout('1')" onchange="run_knockout('1')"></td>
+    <td class="tg-031e"><span id="FlagR17"></span></td>
+    <td class="tg-031e"><span id="R17">?</span></td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr id="R16Tie" class="knockout-tie-content">
+  <form>
+  	<td colspan=2>Penalty winner:</td>
+  	<td colspan=1><input type="radio" name="R16TieOptions" value="0" checked="checked" oninput="run_knockout('1')" onchange="run_knockout('1')"/></td>
+  	<td>x</td>
+  	<td colspan=1><input type="radio" name="R16TieOptions" value="1" oninput="run_knockout('1')" onchange="run_knockout('1')"/></td>
+  </form>
+  </tr>
+</table>
+</div>  
+
+<button class="accordion">Semi Finals
+</button>
+
+<div class="panel">
+<table class="tg">
+  <tr>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Flag</th>
+    <th class="tg-031e">Score</th>
+    <th class="tg-031e">x</th>
+    <th class="tg-031e">Score</th>
+    <th class="tg-031e">Flag</th>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Date</th>
+    <th class="tg-yw4l">L</th>
+  </tr>
+  <tr>
+    <td class="tg-031e"><span id="R20">?</span></td>
+    <td class="tg-031e"><span id="FlagR20"></span></td>
+    <td class="tg-031e"><input id="RR20" size="0" type="number" placeholder="?" oninput="run_knockout('2')" onchange="run_knockout('2')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="RR21" size="0" type="number" placeholder="?" oninput="run_knockout('2')" onchange="run_knockout('2')"></td>
+    <td class="tg-031e"><span id="FlagR21"></span></td>
+    <td class="tg-031e"><span id="R21">?</span></td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr id="R20Tie" class="knockout-tie-content">
+  <form>
+  	<td colspan=2>Penalty winner:</td>
+  	<td colspan=1><input type="radio" name="R20TieOptions" value="0" checked="checked" oninput="run_knockout('2')" onchange="run_knockout('2')"/></td>
+  	<td>x</td>
+  	<td colspan=1><input type="radio" name="R20TieOptions" value="1" oninput="run_knockout('2')" onchange="run_knockout('2')"/></td>
+  </form>
+  </tr>
+  <tr>
+    <td class="tg-031e"><span id="R22">?</span></td>
+    <td class="tg-031e"><span id="FlagR22"></span></td>
+    <td class="tg-031e"><input id="RR22" size="0" type="number" placeholder="?" oninput="run_knockout('2')" onchange="run_knockout('2')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="RR23" size="0" type="number" placeholder="?" oninput="run_knockout('2')" onchange="run_knockout('2')"></td>
+    <td class="tg-031e"><span id="FlagR23"></span></td>
+    <td class="tg-031e"><span id="R23">?</span></td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr id="R22Tie" class="knockout-tie-content">
+  <form>
+  	<td colspan=2>Penalty winner:</td>
+  	<td colspan=1><input type="radio" name="R22TieOptions" value="0" checked="checked" oninput="run_knockout('2')" onchange="run_knockout('2')"/></td>
+  	<td>x</td>
+  	<td colspan=1><input type="radio" name="R22TieOptions" value="1" oninput="run_knockout('2')" onchange="run_knockout('2')"/></td>
+  </form>
+  </tr>
+</table>
+</div>  
+
+
+<button class="accordion">3rd x 4th
+<span id="3rdimg"><img src='Flags/1st.png' width=35px height=21px></span>
+</button>
+
+<div class="panel">
+<table class="tg">
+  <tr>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Flag</th>
+    <th class="tg-031e">Score</th>
+    <th class="tg-031e">x</th>
+    <th class="tg-031e">Score</th>
+    <th class="tg-031e">Flag</th>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Date</th>
+    <th class="tg-yw4l">L</th>
+  </tr>
+  <tr>
+    <td class="tg-031e"><span id="R30">?</span></td>
+    <td class="tg-031e"><span id="FlagR30"></span></td>
+    <td class="tg-031e"><input id="RR30" size="0" type="number" placeholder="?" oninput="run_finals('3')" onchange="run_finals('3')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="RR31" size="0" type="number" placeholder="?" oninput="run_finals('3')" onchange="run_finals('3')"></td>
+    <td class="tg-031e"><span id="FlagR31"></span></td>
+    <td class="tg-031e"><span id="R31">?</span></td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr id="R30Tie" class="knockout-tie-content">
+  <form>
+  	<td colspan=2>Penalty winner:</td>
+  	<td colspan=1><input type="radio" name="R30TieOptions" value="0" checked="checked" oninput="run_finals('3')" onchange="run_finals('3')"/></td>
+  	<td>x</td>
+  	<td colspan=1><input type="radio" name="R30TieOptions" value="1" oninput="run_finals('3')" onchange="run_finals('3')"/></td>
+  </form>
+  </tr>
+</table>
+</div>  
+
+
+<button class="accordion">Finals
+<span id="2ndimg"><img src='Flags/2nd.png' width=35px height=21px></span>
+<span id="1stimg"><img src='Flags/1st.png' width=35px height=21px></span>
+</button>
+
+<div class="panel">
+<table class="tg">
+  <tr>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Flag</th>
+    <th class="tg-031e">Score</th>
+    <th class="tg-031e">x</th>
+    <th class="tg-031e">Score</th>
+    <th class="tg-031e">Flag</th>
+    <th class="tg-031e">Team</th>
+    <th class="tg-031e">Date</th>
+    <th class="tg-yw4l">L</th>
+  </tr>
+  <tr>
+    <td class="tg-031e"><span id="R40">?</span></td>
+    <td class="tg-031e"><span id="FlagR40"></span></td>
+    <td class="tg-031e"><input id="RR40" size="0" type="number" placeholder="?" oninput="run_finals('1')" onchange="run_finals('1')"></td>
+    <td class="tg-031e">x</td>
+    <td class="tg-031e"><input id="RR41" size="0" type="number" placeholder="?" oninput="run_finals('1')" onchange="run_finals('1')"></td>
+    <td class="tg-031e"><span id="FlagR41"></span></td>
+    <td class="tg-031e"><span id="R41">?</span></td>
+    <td class="tg-031e"></td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr id="R40Tie" class="knockout-tie-content">
+  <form>
+  	<td colspan=2>Penalty winner:</td>
+  	<td colspan=1><input type="radio" name="R40TieOptions" value="0" checked="checked" oninput="run_finals('1')" onchange="run_finals('1')"/></td>
+  	<td>x</td>
+  	<td colspan=1><input type="radio" name="R40TieOptions" value="1" oninput="run_finals('1')" onchange="run_finals('1')"/></td>
+  </form>
+  </tr>
+</table>
+</div>  
+    
+</div>
+
+<script>
+//Group for the round robins 8's x 8's, then 4's x 4's, 2's x 2's, 3rdx4th and 1stx2nd
+var robin = createArray(4, 16); //Initialize array
+var tie1 = []; //Move to outter scope
+var tie2 = []; //Move to outter scope
+
+var teams = [],
+    cols = 32;
+//init the teams grid
+for ( var i = 0; i < cols; i++ ) {
+    teams[i] = []; 
+}
+//Team Code
+teams[0][0] = 'Russia';
+teams[1][0] = 'Saudi Arabia';
+teams[2][0] = 'Egypt';
+teams[3][0] = 'Uruguay';
+teams[4][0] = 'Portugal';
+teams[5][0] = 'Spain';
+teams[6][0] = 'Morocco';
+teams[7][0] = 'Iran';
+teams[8][0] = 'France';
+teams[9][0] = 'Australia';
+teams[10][0] = 'Peru';
+teams[11][0] = 'Denmark';
+teams[12][0] = 'Argentina';
+teams[13][0] = 'Iceland';
+teams[14][0] = 'Croatia';
+teams[15][0] = 'Nigeria';
+teams[16][0] = 'Brazil';
+teams[17][0] = 'Switzerland';
+teams[18][0] = 'Costa Rica';
+teams[19][0] = 'Serbia';
+teams[20][0] = 'Germany';
+teams[21][0] = 'Mexico';
+teams[22][0] = 'Sweden';
+teams[23][0] = 'South Korea';
+teams[24][0] = 'Belgium';
+teams[25][0] = 'Panama';
+teams[26][0] = 'Tunisia';
+teams[27][0] = 'England';
+teams[28][0] = 'Poland';
+teams[29][0] = 'Senegal';
+teams[30][0] = 'Colombia';
+teams[31][0] = 'Japan';
+
+//Flag Code
+teams[0][1] = 'Flags/Russia.png';
+teams[1][1] = 'Flags/Saudi Arabia.png';
+teams[2][1] = 'Flags/Egypt.png';
+teams[3][1] = 'Flags/Uruguay.png';
+teams[4][1] = 'Flags/Portugal.png';
+teams[5][1] = 'Flags/Spain.png';
+teams[6][1] = 'Flags/Morocco.png';
+teams[7][1] = 'Flags/Iran.png';
+teams[8][1] = 'Flags/France.png';
+teams[9][1] = 'Flags/Australia.png';
+teams[10][1] = 'Flags/Peru.png';
+teams[11][1] = 'Flags/Denmark.png';
+teams[12][1] = 'Flags/Argentina.png';
+teams[13][1] = 'Flags/Iceland.png';
+teams[14][1] = 'Flags/Croatia.png';
+teams[15][1] = 'Flags/Nigeria.png';
+teams[16][1] = 'Flags/Brazil.png';
+teams[17][1] = 'Flags/Switzerland.png';
+teams[18][1] = 'Flags/Costa Rica.png';
+teams[19][1] = 'Flags/Serbia.png';
+teams[20][1] = 'Flags/Germany.png';
+teams[21][1] = 'Flags/Mexico.png';
+teams[22][1] = 'Flags/Sweden.png';
+teams[23][1] = 'Flags/South Korea.png';
+teams[24][1] = 'Flags/Belgium.png';
+teams[25][1] = 'Flags/Panama.png';
+teams[26][1] = 'Flags/Tunisia.png';
+teams[27][1] = 'Flags/England.png';
+teams[28][1] = 'Flags/Poland.png';
+teams[29][1] = 'Flags/Senegal.png';
+teams[30][1] = 'Flags/Colombia.png';
+teams[31][1] = 'Flags/Japan.png';
+
+//Accordion Menus
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+    
+
+//Function to create array of infos:
+function createArray(length) {
+    var arr = new Array(length || 0),
+        i = length;
+
+    if (arguments.length > 1) {
+        var args = Array.prototype.slice.call(arguments, 1);
+        while(i--) arr[length-1 - i] = createArray.apply(this, args);
+    }
+
+    return arr;
+}
+
+
+//GroupACalc
+function groupAcalc(mygroup) {
+    
+//team will be from 0 to 3 depending on index
+var grp = createArray(4, 11); //Initialize array
+
+//function to set all array to zero
+for(var i = 0; i < grp.length; i++) {
+    var cube = grp[i];
+    for(var j = 0; j < cube.length; j++) {
+        grp[i][j] = 0;
+    }
+}
+
+//Games sequences and teams
+switch (mygroup) {
+	case "GA":
+	grp[0][2] = 0//teams[0][0];
+	grp[1][2] = 1//teams[1][0];
+	grp[2][2] = 2//teams[2][0];
+	grp[3][2] = 3//teams[3][0];
+	
+	robin1 = 0;
+	robin2 = 9;
+    
+	addGp(mygroup+"1",0,1);
+	addGp(mygroup+"2",2,3);
+	addGp(mygroup+"3",0,2);
+	addGp(mygroup+"4",3,1);
+	addGp(mygroup+"5",3,0);
+	addGp(mygroup+"6",1,2);
+    break;
+	
+	case "GB":
+	grp[0][2] = 4//teams[0][0];
+	grp[1][2] = 5//teams[1][0];
+	grp[2][2] = 6//teams[2][0];
+	grp[3][2] = 7//teams[3][0];
+    
+	robin1 = 8;
+	robin2 = 1;
+	
+	addGp(mygroup+"1",2,3);
+	addGp(mygroup+"2",0,1);
+	addGp(mygroup+"3",0,2);
+	addGp(mygroup+"4",3,1);
+	addGp(mygroup+"5",3,0);
+	addGp(mygroup+"6",1,2);
+	break;
+	
+	case "GC":
+	grp[0][2] = 8//teams[0][0];
+	grp[1][2] = 9//teams[1][0];
+	grp[2][2] = 10//teams[2][0];
+	grp[3][2] = 11//teams[3][0];
+	
+	robin1 = 2;
+	robin2 = 11;
+	
+	addGp(mygroup+"1",0,1);
+	addGp(mygroup+"2",2,3);
+	addGp(mygroup+"3",3,1);
+	addGp(mygroup+"4",0,2);
+	addGp(mygroup+"5",3,0);
+	addGp(mygroup+"6",1,2);
+	break;
+	case "GD":
+	grp[0][2] = 12//teams[0][0];
+	grp[1][2] = 13//teams[1][0];
+	grp[2][2] = 14//teams[2][0];
+	grp[3][2] = 15//teams[3][0];
+	
+	robin1 = 10;
+	robin2 = 3;
+	
+	addGp(mygroup+"1",0,1);
+	addGp(mygroup+"2",2,3);
+	addGp(mygroup+"3",0,2);
+	addGp(mygroup+"4",3,1);
+	addGp(mygroup+"5",3,0);
+	addGp(mygroup+"6",1,2);
+	break;
+	case "GE":
+	grp[0][2] = 16//teams[0][0];
+	grp[1][2] = 17//teams[1][0];
+	grp[2][2] = 18//teams[2][0];
+	grp[3][2] = 19//teams[3][0];
+	
+	robin1 = 4;
+	robin2 = 13;
+	
+	addGp(mygroup+"1",2,3);
+	addGp(mygroup+"2",0,1);
+	addGp(mygroup+"3",0,2);
+	addGp(mygroup+"4",3,1);
+	addGp(mygroup+"5",3,0);
+	addGp(mygroup+"6",1,2);
+	break;
+	case "GF":
+	grp[0][2] = 20//teams[0][0];
+	grp[1][2] = 21//teams[1][0];
+	grp[2][2] = 22//teams[2][0];
+	grp[3][2] = 23//teams[3][0];
+	
+	robin1 = 12;
+	robin2 = 5;
+	
+	addGp(mygroup+"1",0,1);
+	addGp(mygroup+"2",2,3);
+	addGp(mygroup+"3",3,1);
+	addGp(mygroup+"4",0,2);
+	addGp(mygroup+"5",3,0);
+	addGp(mygroup+"6",1,2);
+	break;
+	case "GG":
+	grp[0][2] = 24//teams[0][0];
+	grp[1][2] = 25//teams[1][0];
+	grp[2][2] = 26//teams[2][0];
+	grp[3][2] = 27//teams[3][0];
+
+	robin1 = 6;
+	robin2 = 15;
+	
+	addGp(mygroup+"1",0,1);
+	addGp(mygroup+"2",2,3);
+	addGp(mygroup+"3",0,2);
+	addGp(mygroup+"4",3,1);
+	addGp(mygroup+"5",3,0);
+	addGp(mygroup+"6",1,2);
+	break;
+	case "GH":
+	grp[0][2] = 28//teams[0][0];
+	grp[1][2] = 29//teams[1][0];
+	grp[2][2] = 30//teams[2][0];
+	grp[3][2] = 31//teams[3][0];
+
+	robin1 = 14;
+	robin2 = 7;
+	
+	addGp(mygroup+"1",2,3);
+	addGp(mygroup+"2",0,1);
+	addGp(mygroup+"3",3,1);
+	addGp(mygroup+"4",0,2);
+	addGp(mygroup+"5",3,0);
+	addGp(mygroup+"6",1,2);
+	break;
+
+	}
+	
+//Add teams to group array
+
+//Add Flags to group array
+grp[0][1] = teams[grp[0][2]][1]; //"<img src='Flags/Russia.png' width=21px>";
+grp[1][1] = teams[grp[1][2]][1]; //"<img src='Flags/Saudi Arabia.png' width=21px>";
+grp[2][1] = teams[grp[2][2]][1]; //"<img src='Flags/Egypt.png' width=21px>";
+grp[3][1] = teams[grp[3][2]][1]; //"<img src='Flags/Uruguay.png' width=21px>";
+	
+//Add sorting mechanism
+grp[0][11] = grp[0][3]*10000+grp[0][10]*100+grp[0][8];
+grp[1][11] = grp[1][3]*10000+grp[1][10]*100+grp[1][8];
+grp[2][11] = grp[2][3]*10000+grp[2][10]*100+grp[2][8];
+grp[3][11] = grp[3][3]*10000+grp[3][10]*100+grp[3][8];
+
+
+var sortedgrp = createArray(4, 11); //Initialize array
+
+//function to set sorted to grp
+for(var i = 0; i < grp.length; i++) {
+    var cube = grp[i];
+    for(var j = 0; j < cube.length; j++) {
+        sortedgrp[i][j] = grp[i][j];
+    }
+}
+
+//sorting function
+sortedgrp.sort(sortFunction);
+
+function sortFunction(a, b) {
+    if (a[11] === b[11]) {
+        return 0;
+    }
+    else {
+        return (a[11] > b[11]) ? -1 : 1;
+    }
+}
+
+
+for (i = 0; i < 4; i++) {
+document.getElementById(mygroup+"Pts" + i).innerHTML = sortedgrp[i][3];
+document.getElementById(mygroup+"Pld" + i).innerHTML = sortedgrp[i][4];
+document.getElementById(mygroup+"GF" + i).innerHTML = sortedgrp[i][8];
+document.getElementById(mygroup+"GA" + i).innerHTML = sortedgrp[i][9];
+document.getElementById(mygroup+"GD" + i).innerHTML = sortedgrp[i][10];
+document.getElementById(mygroup+"Team" + i).innerHTML = teams[sortedgrp[i][2]][0]; //
+document.getElementById(mygroup+"Flag" + i).innerHTML = "<img src='" + sortedgrp[i][1] +"' width=21px>";
+document.getElementById(mygroup+"Pts" + i).innerHTML = sortedgrp[i][3];
+document.getElementById(mygroup+"W" + i).innerHTML = sortedgrp[i][5];
+document.getElementById(mygroup+"D" + i).innerHTML = sortedgrp[i][6];
+document.getElementById(mygroup+"L" + i).innerHTML = sortedgrp[i][7];
+}
+//***** edited part
+
+var qual = createArray(4, 3); //Initialize array
+var allpld = 0;
+tie1 = []; //Move to outter scope
+tie2 = []; //Move to outter scope
+
+//function to set sorted to qual
+for(var i = 0; i < grp.length; i++) {
+        qual[i][0] = sortedgrp[i][11]; //copy score
+        qual[i][1] = sortedgrp[i][2]; //copy team
+        qual[i][2] = sortedgrp[i][1]; //copy flag
+        allpld += sortedgrp[i][4]; //add number of games played
+		if((qual[0][0] == qual[i][0])) {
+            tie1.push(qual[i][1])
+ 		} else if ((qual[1][0] == qual[i][0])) {
+ 			tie2.push(qual[i][1])
+ 		}
+}
+
+document.getElementById(mygroup+"TieFirst").classList.remove("show");
+document.getElementById(mygroup+"TieSecong").classList.remove("show");
+//Reset Robins
+    
+//Reset Group images
+document.getElementById(mygroup+"1img").innerHTML = "<img src='Flags/1st.png' width=35px height=21px>";
+document.getElementById(mygroup+"2img").innerHTML = "<img src='Flags/2nd.png' width=35px height=21px>";
+//check if everyone played 3 games
+if (allpld==12) {
+ if(tie1.length == 1) { //Only one first team, so add flag and add team to 16 rouster
+     document.getElementById(mygroup+"1img").innerHTML = "<img src='" + qual[0][2] + "' width=35px height=21px>";
+     robin[0][robin1] = qual[0][1]; //Winnner of GA goes to spot 0
+ if(tie2.length == 1) { //Only one second team, so add flag and add team to 16 rouster
+     document.getElementById(mygroup+"2img").innerHTML = "<img src='" + qual[1][2] + "' width=35px height=21px>";
+     robin[0][robin2] = qual[1][1]; //Runner up of GA goes to spot 9
+ } else {
+ //Open second place dropdown menu
+     document.getElementById(mygroup+"TieSecong").classList.add("show");
+     var tietext = "Tie for 2nd, pick one: ";
+     for (var i = 0; i < tie2.length; i++) {
+         	tietext += "<a onclick='untiefunction(2, \""+mygroup+"\", "+robin1+", "+robin2+", "+ qual[1+i][1]+", "+tie1+")' href='#'>" + teams[qual[1+i][1]][0] + "</a>";
+         	
+         }
+     document.getElementById(mygroup+"TieSecongText").innerHTML = tietext;
+ }
+ } else {
+ //myFunction();
+ //Open first place dropdown menu
+     document.getElementById(mygroup+"TieFirst").classList.add("show");
+     var tietext = "Tie for 1st, pick one: ";
+     for (var i = 0; i < tie1.length; i++) {
+     		//what arguments to pass? first or second, group, robin place for the tie1, robin place for tie2, clicked team, other options
+             tietext += "<a onclick='untiefunction(1, \""+mygroup+"\", "+robin1+", "+robin2+", "+ qual[i][1]+", "+tie1+")' href='#'>" + teams[qual[i][1]][0] + "</a>";
+         	}
+     document.getElementById(mygroup+"TieFirstText").innerHTML = tietext;
+ }
+}
+
+
+//Function to calculate all results
+function addGp(match, team1, team2) {
+//match will be GA1 and then we add home or away
+//team will be from 0 to 3 depending on index
+var h = parseInt(document.getElementById(match + "H").value); //home team score
+var a = parseInt(document.getElementById(match + "A").value); //away team score
+
+if (isNaN(h) && isNaN(a)) { } else {
+    h = h || 0;
+    a = a || 0;
+    // 0.  1.    2.  3.  4. 5 6 7 8. 9. 10. 11
+    //Pos Flag Team Pts Pld W D L GF GA GD Qual
+    //add Pts, W, D and L
+    if (h>a) { //Team1 wins
+        grp[team1][3] = grp[team1][3] + 3; //add Pts
+        grp[team1][5] = grp[team1][5] + 1; //add W
+        grp[team2][7] = grp[team2][7] + 1; //add L
+    }
+    if (h<a) { //Team2 wins
+        grp[team2][3] = grp[team2][3] + 3; //add Pts
+        grp[team2][5] = grp[team2][5] + 1; //add W
+        grp[team1][7] = grp[team1][7] + 1; //add L
+    }
+    if (h==a) { //Draws
+        grp[team1][3] = grp[team1][3] + 1; //add Pts
+        grp[team2][3] = grp[team2][3] + 1; //add Pts
+        grp[team2][6] = grp[team2][6] + 1; //add D
+        grp[team1][6] = grp[team1][6] + 1; //add D
+    }
+
+    //add Pld
+    grp[team1][4] = grp[team1][4] + 1;
+    grp[team2][4] = grp[team2][4] + 1;
+   
+    //add GF
+    grp[team1][8] = grp[team1][8] + h;
+    grp[team2][8] = grp[team2][8] + a;
+    
+    //add GA
+    grp[team1][9] = grp[team1][9] + a;
+    grp[team2][9] = grp[team2][9] + h;
+
+    //add GD
+    grp[team1][10] = grp[team1][10] + h - a;
+    grp[team2][10] = grp[team2][10] + a - h;
+
+    }
+}
+
+//recalculate heights
+var acc = document.getElementsByClassName("panel");
+
+for (var i = 0; i < acc.length; i++) {
+	if (acc[i].style.maxHeight){
+      acc[i].style.maxHeight = acc[i].scrollHeight + "px";
+    } else {
+	  acc[i].style.maxHeight = null;
+    } 
+  }
+//console.log(robin);
+set_knockout()
+}
+
+//Untie function, works for all groups
+function untiefunction(first, group, tie1, tie2, choosen) {
+console.log(first);
+console.log(group);
+console.log(tie1);
+console.log(tie2);
+console.log(choosen);
+		if (first==1) {
+            document.getElementById(group + "2img").innerHTML = "<img src='Flags/2nd.png' width=35px height=21px>";
+            robin[0][tie1] = choosen;
+            robin[0][tie2] = "";
+ 		if (arguments.length>7) { //more than 2 tied
+ 			document.getElementById(group + "TieSecong").classList.add("show");
+ 			var tietext = "Tie for 2nd, pick one: ";
+ 			for (var i = 0; i < arguments.length-5; i++) {
+ 				if (arguments[i+5]!=choosen) {
+ 				tietext += "<a onclick='untiefunction(2, \"" + group +"\", "+tie1+", "+tie2+", "+ arguments[i+5] +")' href='#'>" + teams[arguments[i+5]][0] + "</a>";
+ 				}
+ 			}
+ 			document.getElementById(group + "TieFirst").classList.remove("show"); //do it for arg1 only
+ 			document.getElementById(group + "TieSecongText").innerHTML = tietext;
+ 		} else { //only two tied
+ 		    switch(choosen) {
+ 		    case arguments[5]:
+ 		    robin[0][tie2] = arguments[6];
+ 		    break;
+ 		    case arguments[6]:
+ 		    robin[0][tie2] = arguments[5];
+ 		    break;
+ 		    default:
+ 		    }
+            document.getElementById(group + "2img").innerHTML = "<img src='" + teams[robin[0][tie2]][1] + "' width=35px height=21px>";
+ 		    document.getElementById(group + "TieFirst").classList.remove("show"); //do it for arg1 only
+ 		}
+	} else { //second place tie
+		robin[0][tie2] = choosen;
+		document.getElementById(group + "TieSecong").classList.remove("show"); //do it for arg1 only
+        document.getElementById(group + "2img").innerHTML = "<img src='" + teams[robin[0][tie2]][1] + "' width=35px height=21px>";
+	}
+ 
+document.getElementById(group + "1img").innerHTML = "<img src='" + teams[robin[0][tie1]][1] + "' width=35px height=21px>";
+
+set_knockout();
+}
+
+
+
+</script>
+<script type="text/javascript" src="functions.js"></script>
+
+
+</body>                </p>
+            </div>
+            <div class="tab-pane fade" id="tabthree" role="tabpanel">
+              <p class="">Tab pane regras. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                
+<!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_google_plus"></a>
+<a class="a2a_button_whatsapp"></a>
+</div>
+<script>
+var a2a_config = a2a_config || {};
+a2a_config.linkname = "teste";
+a2a_config.linkurl = "http://www.google.com";
+</script>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
+                
+            </div>
+                            <div class="tab-pane fade" id="tabfour" role="tabpanel">
+                       
+                    <p class="">Participantes aguardando autorização:</p>
+                    <div id="UsersAuth">
+                        <ul class="list-group">
+                        <li class="list-group-item"><button class="btn btn-primary" value="1,14,37693c" id="AuthButton"><i class="fas fa-check"></i></button> Super Admin</li><li class="list-group-item"><button class="btn btn-primary" value="3,14,37693c" id="AuthButton"><i class="fas fa-check"></i></button> Usuario Numero Tres</li>                        </ul>
+                        </div>
+            </div>          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      
+<script>
+
+$(document).on('click', '#AuthButton', function(){
+        var info = $( this ).val();
+        
+        var str = $( this ).val();
+        var res = str.split(",");
+        
+        $.get("users_auth.php",
+    {
+        id_user: res[0],
+        id_group: res[1],
+        groupCode: res[2],    
+    }, function(data){
+            document.getElementById("UsersAuth").innerHTML = data;
+        });
+    });
+    
+
+$( document ).on('click', '#downloadtoggle', function() {
+  $( "#toggle" ).toggle( "slide" );
+});
+
+    </script>
+
+</body>
+
+</html>
